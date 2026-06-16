@@ -1,0 +1,23 @@
+/* 1. IMPORT GOOGLE SANS ALTERNATIVE (Plus Jakarta Sans) VIA CDN */
+/* Kami gunakan Plus Jakarta Sans karena memiliki anatomi modern geometris yang sangat mirip dengan Google Sans untuk UI/UX */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* 2. REGISTRASI CUSTOM FONT 'BOLDONSE' */
+@font-face {
+    font-family: 'Boldonse';
+    src: url('../fonts/Boldonse.ttf') format('truetype'),
+         url('../fonts/Boldonse.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Memastikan teks tetap muncul dengan font fallback sebelum file fisik selesai di-download */
+}
+
+/* 3. ASSIGNMENT GLOBAL */
+body {
+    font-family: 'Plus Jakarta Sans', 'Google Sans', sans-serif;
+}
+
+.font-time {
+    font-family: 'Boldonse', sans-serif;
+    letter-spacing: 0.05em; /* Memberikan sedikit celah agar angka/waktu lebih mudah dibaca dari kejauhan */
+}
